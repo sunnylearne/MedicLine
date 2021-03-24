@@ -48,27 +48,27 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/medicline logo.jpg" alt=""></a>
+      <a href="index.php" class="logo mr-auto"><img src="assets/img/medicline logo.jpg" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo mr-auto"><a href="index.html">Medicio</a></h1> -->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li class="drop-down"><a href="features.html">Staffs</a>
             <ul>
-              <li><a href="staffs.html #doctors">Team</a></li>
-              <li><a href="staffs.html #departments">Partnering Hospitals</a></li>
-              <li><a href="staffs.html #pricing">Partnering Doctors</a></li>
+              <li><a href="staffs.html#doctors">Team</a></li>
+              <li><a href="staffs.html#departments">Partnering Hospitals</a></li>
+              <li><a href="staffs.html#pricing">Partnering Doctors</a></li>
             </ul>
           <li class="drop-down"><a href="#">More Features</a>
             <ul>
-              <li><a href="features.html #appointment">Appointment</a></li>
-              <li><a href="features.html #testimonials">Testimonials</a></li>
-              <li><a href="features.html #gallery">Gallery</a></li>
-              <li><a href="features.html #pricing">Subscription</a></li>
+              <li><a href="features.html#appointment">Appointment</a></li>
+              <li><a href="features.html#testimonials">Testimonials</a></li>
+              <li><a href="features.html#gallery">Gallery</a></li>
+              <li><a href="features.html#pricing">Subscription</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
