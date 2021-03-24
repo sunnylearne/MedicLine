@@ -244,8 +244,7 @@
             <div class="footer-info">
               <h3>MedicLine E-Health</h3>
               <p>
-                49 Tetlow Road Owerri, Imo Im<br>
-                Imo State, Nigeria<br><br>
+                49 Tetlow Road Owerri, Imo Statebr <br>11 Wogu str. D-Line Port Harcourt <br>31 Edozie str. Uwani Enugu <br>
                 <strong>Phone:</strong> +2347042969682<br>
                 <strong>Email:</strong> medicline2020@yahoo.com<br>
               </p>
