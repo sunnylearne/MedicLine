@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 35px;
 }
 
 @media (max-width: 992px) {
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
   }
   #header .logo {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -311,8 +311,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .appointment-btn {
-    margin: 0 48px 0 0;
-    padding: 6px 18px;
+    margin: 0 45px 0 0;
+    padding: 5px 15px;
   }
 }
 
@@ -828,6 +828,9 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+.about-list{
+  text-align: justify;
+}
 
 /*--------------------------------------------------------------
 # Counts
@@ -1155,6 +1158,26 @@ section {
   }
 }
 
+
+.hospital-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  align-items: center;
+}
+
+th{
+  background-color: #13035ef8;
+  font-size: 25px;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
