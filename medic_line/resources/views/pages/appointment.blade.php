@@ -26,7 +26,9 @@
             <p>We offer Open Access Scheduling, which means you can schedule an appointment the same day you call. (If available) Carefully fill the appointments form</p>
           </div>
   
-          <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <form action="{{ route('appointment.store') }}" method="POST" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            @csrf
+
             <div class="form-row">
               <div class="col-md-4 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -72,8 +74,6 @@
             </div>
             <div class="mb-3">
               <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
             </div>
             <div class="text-center"><button type="submit">Make an Appointment</button></div>
           </form>
@@ -335,6 +335,19 @@
   
         </div>
       </section><!-- End Frequently Asked Questioins Section -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script>
+        flatpickr('#date', {
+          enableTime: true,
+          enableSeconds: true
+        })
+
+        $(document).ready(function() {
+          $('.tags-selector').select2();
+        })
+      </script>
   
   <!-- End #main -->
 @endsection

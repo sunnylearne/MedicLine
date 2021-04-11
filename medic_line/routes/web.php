@@ -25,6 +25,7 @@ Route::get('/services', 'PagesController@services')->name('services');
 Route::get('/staff', 'PagesController@staff')->name('staff');
 
 Route::get('/make-appointment', 'AppointmentController@create')->name('appointment.create');
+Route::post('/make-appointment', 'AppointmentController@store')->name('appointment.store');
 
 Route::get('/contact-us', 'ContactsController@create')->name('contacts.create');
 Route::post('/contact-us', 'ContactsController@store')->name('contacts.store');
