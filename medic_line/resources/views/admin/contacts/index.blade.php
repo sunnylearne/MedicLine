@@ -37,6 +37,7 @@
                                                 <th scope="col">Email</th>
                                                 <th scope="col">Subject</th>
                                                 <th scope="col">Message</th>
+                                                <th scope="col">Time</th>
 
                                                 </tr>
                                             </thead>
@@ -49,6 +50,7 @@
                                                     <td>{{ $contact->email}}</td>
                                                     <td>{{ $contact->subject}}</td>
                                                     <td><a href="/contacts/{{$contact->id}}" class="btn btn-primary">View Message</a></td>
+                                                    <td>{{ $contact->created_at->diffForHumans()}}</td>
                                                     </tr>
                                                     
                                                 </tbody>

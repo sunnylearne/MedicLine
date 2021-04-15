@@ -25,14 +25,20 @@ class AppointmentController extends Controller
         $appointment-> date = $request->date;
         $appointment-> message = $request->message;
         $appointment-> save();
-        dd('request->date');
+
+        Session::flash('success', 'You have succefully booked an appointment with us. Please wait for a reply through mail'); 
+
+        return redirect()->route('home');
     }
 
     public function show(Appointment $appointment){
         return view('admin.appointments.show')->with('appointment', $appointment);
     }
 
-    public function destroy(){
-        
+    public function destroy(Appointment $appointment){
+        $appointment->delete();
+        Session::flash('success', 'You have succefully deleted an appointment');
+
+        return redirect('/appointments');
     }
 }

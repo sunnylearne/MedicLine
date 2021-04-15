@@ -36,6 +36,7 @@ class ContactsController extends Controller
 
     public function destroy(Contact $contact){
         $contact->delete();
+        Session::flash('success', 'You have succefully deleted the message');
         session()->flash('success', 'Message deleted successfully...');
         return redirect('/contacts');
     }

@@ -33,7 +33,12 @@ Route::post('/contact-us', 'ContactsController@store')->name('contacts.store');
 Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin')->name('admin');
+
 Route::get('/appointments', 'AppointmentController@index')->name('appointments.index');
 Route::get('/appointments/{appointment}', 'AppointmentController@show')->name('showappointment');
+Route::get('/appointments/{appointment}/delete', 'AppointmentController@destroy')->name('delete');
+
+
 Route::get('/contacts', 'ContactsController@index')->name('contacts.index');
 Route::get('/contacts/{contact}', 'ContactsController@show')->name('showcontact');
+Route::get('/contacts/{contact}/delete', 'ContactsController@destroy')->name('delete');

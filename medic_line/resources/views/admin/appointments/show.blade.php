@@ -34,7 +34,7 @@
                 Sent: {{ $appointment->created_at->diffForHumans()}}
             </div>
             <div>
-                 <a class="btn btn-danger float-end" href="">Delete</a>
+                 <a class="btn btn-danger float-end" href="{{ $appointment->id }}/delete">Delete</a>
             </div>
         </div>
         

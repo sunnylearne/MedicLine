@@ -47,7 +47,7 @@
                                                     <td>{{ $appointment->name}}</td>
                                                     <td>{{ $appointment->email}}</td>
                                                     <td>{{ $appointment->phone}}</td>
-                                                    <td>{{ $appointment->date}}</td>
+                                                    <td>{{ $appointment->created_at->toDateString()}}</td>
                                                     <td><a href="/appointments/{{$appointment->id}}" class="btn btn-primary">View Message</a></td>
                                                     </tr>
                                                     

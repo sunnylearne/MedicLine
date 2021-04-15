@@ -31,7 +31,7 @@
                 Sent: {{ $contact->created_at->diffForHumans()}}
             </div>
             <div>
-                 <a class="btn btn-danger float-end" href="/contacts/{{ $contact->id }}/delete">Delete</a>
+                 <a class="btn btn-danger float-end" href="{{ $contact->id }}/delete">Delete</a>
             </div>
         </div>
     </div>
