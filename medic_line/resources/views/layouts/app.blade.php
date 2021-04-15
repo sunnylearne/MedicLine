@@ -27,6 +27,10 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
 
+                <a class="navbar-brand" href="{{ url('/admin') }}">
+                    Dashboard
+                </a>
+
                 <a class="navbar-brand" href="{{ route('contacts.index') }}">
                     Contacts
                 </a>

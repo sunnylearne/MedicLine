@@ -25,10 +25,13 @@
                         
                     
                     </div>
-                
-                    <div class="card-footer">
-                            <a class="btn btn-danger float-end" href="/contacts/{{ $contact->id }}/delete">Delete</a>
-                        </div>    
+                   
+            </div>
+            <div>
+                Sent: {{ $contact->created_at->diffForHumans()}}
+            </div>
+            <div>
+                 <a class="btn btn-danger float-end" href="/contacts/{{ $contact->id }}/delete">Delete</a>
             </div>
         </div>
     </div>

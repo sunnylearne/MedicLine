@@ -11,8 +11,8 @@
             
                 <div class="card-header">
                     Sender: {{($appointment->name)}}
-                
                 </div>
+                
 
                     <div class="card-body">
                         @if (session('status'))
@@ -22,15 +22,22 @@
                         @endif
 
                         <div class="container">{{($appointment->message)}}</div>
+
+                        
                         
                     
                     </div>
                 
-                    <div class="card-footer">
-                            <a class="btn btn-danger float-end" href="">Delete</a>
-                        </div>    
+                        
+            </div>
+            <div>
+                Sent: {{ $appointment->created_at->diffForHumans()}}
+            </div>
+            <div>
+                 <a class="btn btn-danger float-end" href="">Delete</a>
             </div>
         </div>
+        
     </div>
 </div>
 @endsection
