@@ -32,5 +32,8 @@ Route::post('/contact-us', 'ContactsController@store')->name('contacts.store');
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('admin');
-Route::get('/contacts', 'ContactsController@index')->name('contacts');
+Route::get('/admin', 'HomeController@index')->name('admin')->name('admin');
+Route::get('/appointments', 'AppointmentController@index')->name('appointments.index');
+Route::get('/appointments/{appointment}', 'AppointmentController@show')->name('showappointment');
+Route::get('/contacts', 'ContactsController@index')->name('contacts.index');
+Route::get('/contacts/{contact}', 'ContactsController@show')->name('showcontact');

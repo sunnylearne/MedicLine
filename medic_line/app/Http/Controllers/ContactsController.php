@@ -9,7 +9,7 @@ use App\Http\Requests\ContactRequest;
 class ContactsController extends Controller
 {
     public function index(){
-        
+        return view('admin.contacts.index')->with('contacts', Contact::all());  
     }
 
     public function create(){
@@ -30,11 +30,13 @@ class ContactsController extends Controller
 
     }
 
-    public function show(){
-        
+    public function show(Contact $contact){
+        return view('admin.contacts.show')->with('contact', $contact);
     }
 
-    public function destroy(){
-        
+    public function destroy(Contact $contact){
+        $contact->delete();
+        session()->flash('success', 'Message deleted successfully...');
+        return redirect('/contacts');
     }
 }

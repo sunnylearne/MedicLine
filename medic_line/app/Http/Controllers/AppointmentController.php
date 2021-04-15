@@ -13,7 +13,7 @@ class AppointmentController extends Controller
     }
 
     public function index(){
-        
+        return view('admin.appointments.index')->with('appointments', Appointment::all());
     }
 
     public function store(CreateAppointmentRequest $request){
@@ -28,8 +28,8 @@ class AppointmentController extends Controller
         dd('request->date');
     }
 
-    public function show(){
-        
+    public function show(Appointment $appointment){
+        return view('admin.appointments.show')->with('appointment', $appointment);
     }
 
     public function destroy(){
